@@ -1,0 +1,51 @@
+
+
+{%extends "base.html"%}
+
+
+
+
+
+{% block pagecont %}
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="inner cover"><br><br><br><br>
+            <p class="lead hbio">Hello <b>Mr. Jhon</b>.</p>
+            <br><br>
+                         <p class="lead">
+              <a class = "btn btn-lg btn-secondary" href="{{url_for('login')}}"><span class = "glyphicon glyphicon-arrow-right" ></span> AC </a>
+            </p>
+            <p class = "lead">
+              <a class ="btn btn-lg btn-secondary" href="{{url_for('signup')}}"><span class = "glyphicon glyphicon-arrow-right" ></span> Samsung</a>
+            </p>
+                       <p class = "lead">
+              <a class ="btn btn-lg btn-secondary" href="{{url_for('signup')}}"><span class = "glyphicon glyphicon-arrow-right" ></span> Model 12345F</a>
+            </p>
+                       <p class = "lead">
+              <a class ="btn btn-lg btn-secondary" href="{{url_for('signup')}}"><span class = "glyphicon glyphicon-arrow-right" ></span> Wont Turn On</a>
+            </p>
+                       <p class = "lead">
+              <a class ="btn btn-lg btn-secondary" href="{{url_for('signup')}}"><span class = "glyphicon glyphicon-arrow-right" ></span> Control panel turned off</a>
+            </p>
+            <button type="submit" id = "bt" class="btn btn-primary btn-block btn-lg" data-toggle="modal"><span class= "glyphicon glyphicon-send"></span> Send</button>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>All rights reserved®, by <a href="https://twitter.com/_MusaHawa">@Explore</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+{% endblock %}

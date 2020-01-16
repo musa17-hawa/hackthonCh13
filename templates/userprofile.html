@@ -1,0 +1,42 @@
+
+
+{%extends "base.html"%}
+
+
+
+
+
+{% block pagecont %}
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="inner cover"><br><br><br><br>
+            <p class="lead hbio">Hello <b>Mr. Jhon</b>.</p>
+            <br><br>
+            <p class="lead">
+              <a class = "btn btn-lg btn-success" href="{{url_for('report')}}"><span class = "glyphicon glyphicon-plus" ></span> Report </a>
+            </p>
+            <p class = "lead">
+              <a class ="btn btn-lg btn-warning" href="{{url_for('reporthistory')}}"><span class = "glyphicon glyphicon-time"></span> Report History</a>
+              <a class ="btn btn-lg btn-primary" href="{{url_for('trackreport')}}"><span class = "glyphicon glyphicon-search" ></span> Track Your Reports</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>All rights reserved®, by <a href="https://twitter.com/_MusaHawa">@Explore</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+{% endblock %}

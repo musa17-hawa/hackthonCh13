@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>AConnect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='aboutus.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="icon" href="{{ url_for('static', filename='lo.png') }}" >
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{url_for('home')}}"><img src="../static/logo.png" alt="Explore logo" height="24"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="navh" href="#section1">Who</a></li>
+        <li><a class="navh" href="#section2">What</a></li>
+        <li><a class="navh" href="#section3">Why</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- First Container -->
+<div id="section1" class="container-fluid">
+  <div class=" bg-3 text-center">
+    <h3 class="margin">Who We Are</h3>
+    <p>We are a group of six palestinian teenagers participating in the Mati-Hackthon programe where learned Developed this website  </span></p><br><br>
+    <div class="row clearfix">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="{{ url_for('static', filename='musa.jpg') }}" class="img-circle" alt="Cinque Terre" width="256" height="256">
+        <p>Yazen , 23, Palestinian from Jerusalem.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="{{ url_for('static', filename='musa.jpg') }}" class="img-circle" alt="Cinque Terre" width="256" height="256">
+        <p>Lina Abu Youssef, 19, an Palestinian from Beit-Safafa.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4"> 
+        <img src="{{ url_for('static', filename='musa.jpg') }}" class="img-circle" alt="Cinque Terre" width="256" height="256">
+        <p>Suzans, 20, Palestinian from Jerusalem.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4"> 
+        <img src="{{ url_for('static', filename='musa.jpg') }}" class="img-circle" alt="Cinque Terre" width="256" height="256">
+        <p>Musa Abu El-Hawa, 20, Palestinian from Jerusalem.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4"> 
+        <img src="{{ url_for('static', filename='musa.jpg') }}" class="img-circle" alt="Cinque Terre" width="256" height="256">
+        <p>Pierre,19, an Palestine from Jerusalem.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <img src="{{ url_for('static', filename='musa.jpg') }}" class="img-circle" alt="Cinque Terre" width="256" height="256">
+        <p>Samer, 19, an Palestinian from Beit-jala.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Container -->
+<div id="section2" class="container-fluid">
+  <div class="container-fluid bg-2 text-center">
+    <h3 class="margin">What We Do</h3>
+    <p>Our goal, as students in the middle east, that understands the gaps between people, is to give our users the opportunity to get to know other cultures, to make new connections with new people around the world and to have interesting conversations in an free, easy, fun platform. </p>
+  </div>
+</div>
+
+<!-- Third Container (Grid) -->
+<div id="section3" class="container-fluid">
+  <div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Why We Do It</h3>
+    <p>We envision a world where people from different nationalities, countries and economical backgrounds can overcome the gaps and variations between them in order to ensure better relationships.<br></p>
+  </div>
+</div>
+<!-- Footer -->
+<div id="section4" class="container-fluid">
+  <footer class="container-fluid bg-4 text-center">
+    <p>All rights reserved®, by <a href="https://twitter.com/_MusaHawa">@Explore</a>.</p>
+  </footer>
+</div> 
+
+</body>
+</html>

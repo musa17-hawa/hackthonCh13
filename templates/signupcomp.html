@@ -1,0 +1,59 @@
+{%extends "base.html"%}
+   
+{%block headcont%}<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='signin.css') }}">{%endblock%}
+{%block pagecont%}
+{%block first%}<li><a href="{{url_for('home')}}">Home</a></li>{%endblock%}
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+`
+          <div class="inner cover"><br><br><br><br><br>
+            <h1 class="form-signin-heading" >Please Sign up</h1><br><br>
+            <form method = 'POST' action = "{{url_for('signupcomp')}}" class="form-signin">
+
+              <label for="inputLastName" class="sr-only">Company Name: </label>
+              <input type="text" id="inputLastName" class="form-control" placeholder="Company Name" name = "compname" required ><br>
+
+              <label for="inputLocation" class="sr-only">Address Location: </label>
+              <input type="text" id="inputLocation" class="form-control" placeholder="Location" name = "location" required ><br>
+
+
+              <label for="inputUserName" class="sr-only">Username: </label>
+              <input type="text" id="inputUserName" class="form-control" placeholder="Username" name = "username" required ><br>
+
+              <label for="inputEmail" class="sr-only">Email address: </label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name = "email" required ><br>
+
+              <label for="inputPassword" class="sr-only">Password: </label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" name = "password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain : 1- at least one number 2- one uppercase 3- lowercase letter 4- at least 8 or more characters" required><br>
+
+              <label for="inputPassword" class="sr-only">Confirm Password: </label>
+              <input type="password" id="inputPassword" class="form-control" 
+              {% with ms = get_flashed_messages() %}
+               {% if ms %}
+                title = {{ms}} 
+               {% endif %} 
+              {% endwith %} placeholder="Re-Write your Password"  name = "confirm_password" required><br>
+
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+            </form>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>All rights reserved®, by <a href="https://twitter.com/_MusaHawa">@AConnect</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+{%endblock%}

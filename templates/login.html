@@ -1,0 +1,39 @@
+
+
+{%extends "base.html"%}
+
+
+
+
+
+{% block pagecont %}
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="inner cover"><br><br><br><br>
+            <img src="../static/logo.png" class="img-responsive logo_img" alt="Explore logo"><br><br>
+              <a class = "btn btn-lg btn-success" href="{{url_for('loginuser')}}"><span class = "glyphicon glyphicon-log-in" ></span> User LogIn </a>
+            </p>
+            <p class = "lead">
+              <a class ="btn btn-lg btn-primary" href="{{url_for('logincomp')}}"><span class = "glyphicon glyphicon-user" ></span> Company LogIn</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>All rights reserved®, by <a href="https://twitter.com/_MusaHawa">@Explore</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+{% endblock %}

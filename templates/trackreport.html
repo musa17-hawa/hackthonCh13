@@ -1,0 +1,43 @@
+
+
+{%extends "base.html"%}
+
+
+
+
+
+{% block pagecont %}
+<br><br><br><br><br>
+  <div class=" row ">
+    <div class="col-md-1 col-sm-1 col-xs-1"></div>
+    <div id = "cb" class="col-md-7 col-sm-6 col-xs-6"><h1></h1>
+      <div class="row">
+        <div class="col-md-5 alri">
+          <h2 class="alle">Your report has Been reviewed !</h2><br>
+          <h2 class="alle">We are on our way to you </h2><br>
+          <h2 class="alle">We hope you liked our service </h2><br>
+        </div>
+      <div class="col-md-2"></div>
+      </div>
+  <div class="row">
+    <div class="col-md-10">
+        <input class = "form-control" type="text" name="chat">
+    </div>
+    <div class="col-md-2">
+      <button type="submit" id = "bt" class="btn btn-primary btn-lg" data-toggle="modal"><span class= "glyphicon glyphicon-send"></span> Send</button>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-1 col-sm-1 col-xs-1"></div>
+  <div class="col-md-3 col-sm-4 col-xs-4">
+    
+  <h2>Your Reports: </h2><br>
+                <p class = "lead">
+              <a class ="btn btn-lg btn-primary" href=""><span class = " glyphicon glyphicon-list-alt"></span> Report No: 1234</a>
+            </p><br>
+
+  </div>
+</div>
+
+
+{% endblock %}
